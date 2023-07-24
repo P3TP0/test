@@ -6,4 +6,4 @@
   tasks:
     - name: Set new hostname
       hostname:
-        name: newdebian
+        name: newdebian1
