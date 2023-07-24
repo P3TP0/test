@@ -3,8 +3,8 @@
 
   become: true
   vars:
-    ansible_user: your_username
-    ansible_ssh_pass: your_password
+    ansible_user: root
+    ansible_ssh_pass: root
   tasks:
     - name: update apt
       apt:
