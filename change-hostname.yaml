@@ -1,0 +1,9 @@
+---
+- name: Change hostname on Debian
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Set new hostname
+      hostname:
+        name: newdebian
