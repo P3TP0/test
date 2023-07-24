@@ -1,0 +1,13 @@
+---
+- name: Change hostname and update apt on Debian
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Set new hostname
+      hostname:
+        name: newdebian1
+    - name: Updade apt
+      apt:
+        upgrade: yes
+        update_cache: yes
